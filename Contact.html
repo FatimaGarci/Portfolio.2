@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/Contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav role='navigation'>
+        <h1 class="logo-title">Fatima Garcia</h1>
+        <div id="menuToggle">
+            <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
+            <input type="checkbox" />
+            <!--Some spans to act as a hamburger.-->
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="Index.html">
+                    <li>Landing</li>
+                </a>
+                <a href="About.html">
+                    <li>About</li>
+                </a>
+                <a href="Projects.html">
+                    <li>Projects</li>
+                </a>
+                <a href="Contact.html">
+                    <li>Contact</li>
+                </a>
+                <a href="#" target="_blank">
+                    <li>Resume</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <!--  Contact Form  -->
+  <h2>Contact Form</h2>
+
+  <form id="form" class="topBefore">
+  
+    <input id="name" type="text" placeholder="NAME" required >
+    <input id="email" type="text" placeholder="E-MAIL" required >
+    <input type="tel" name="telephone" id="contacttelnumber" placeholder="Phone Number" required>
+    <textarea id="message" type="text" placeholder="MESSAGE" ></textarea>
+    <input id="submit" type="submit" >
+  </form>
+
+ <!-- Footer  -->
+ <footer id="footer">
+    <div class="social-media-links">
+        <a href="https://www.facebook.com/" class="fa fa-facebook" aria-label="Facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter" aria-label="Twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram" aria-label="Instagram"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube" aria-label="Youtube"></a>
+    </div>
+    <div class='footer-text'>
+        <div class="copyright">
+            <p>&copy; 2020 Rossmery Garcia | OFFICIAL STORE. ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="footer-links">
+            <a href="About.html">| About Me |</a>
+            <a href="Projects.html"> | Projects| </a>
+            <a href="Contact.html"> | Contact |</a>
+            <a href="">Resume</a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://kit.fontawesome.com/376d298b57.js" crossorigin="anonymous"></script>
+</body>
+</html>

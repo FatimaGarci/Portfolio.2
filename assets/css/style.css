@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+     background: url("https://cdn.dribbble.com/users/1452333/screenshots/11112217/desk_blooms_animatesm.gif") no-repeat  center/cover;
+     background-color: #cccccc;
+     height: 800px;
+ }
+
+#main{
+    display: flex;
+}
+.content-wrap{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.row{
+  border-left: 5px solid #849CD6;
+  padding-left: 20px;
+}
+.row h1{
+    margin: 0;
+    padding: 0;
+    font-size: 65px;
+    font-family: 'Allerta Stencil', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #ffffff;
+}
+.row h3{
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-family: 'Allerta Stencil', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #ffffff;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background:#849CD6;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:50px;
+    font-size:1.6em;
+    font-family: 'Allerta Stencil', sans-serif;
+    padding:0 2em;
+    border-radius: 20px;
+    transition:800ms ease all;
+    outline:none;
+  }
+  button:hover{
+    background:	#CC9424;
+    color:#fff;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #feffff;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  
+  
+

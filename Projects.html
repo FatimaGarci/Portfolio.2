@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/Projects.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav role='navigation'>
+        <h2 class="logo-title">Fatima Garcia</h2>
+        <div id="menuToggle">
+            <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
+            <input type="checkbox" />
+            <!--Some spans to act as a hamburger.-->
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="Index.html">
+                    <li>Landing</li>
+                </a>
+                <a href="About.html">
+                    <li>About</li>
+                </a>
+                <a href="Projects.html">
+                    <li>Projects</li>
+                </a>
+                <a href="Contact.html">
+                    <li>Contact</li>
+                </a>
+                <a href="#" target="_blank">
+                    <li>Resume</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Projects -->
+    <div class="main">
+        <h2 id="portfolio-title">MY PORTFOLIO</h2>
+        <hr>
+        <br>    
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('nature')"> React</button>
+          <button class="btn" onclick="filterSelection('cars')"> HTML & CSS</button>
+          <button class="btn" onclick="filterSelection('people')"> --</button>
+        </div>
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column nature">
+            <div class="content">
+              <img src="./assets/img/Gateway.png" alt="Mountains" style="width:100%">
+              <h4>Gateway Project</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column nature">
+            <div class="content">
+            <img src="./assets/img/Form.png" alt="Lights" style="width:100%">
+              <h4>Restaurant Reservation Form</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column nature">
+            <div class="content">
+            <img src="./assets/img/navbar.png" alt="Nature" style="width:100%">
+              <h4>Animated Navigation Bar</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          
+          <div class="column cars">
+            <div class="content">
+              <img src="./assets/img/speech.png" alt="Car" style="width:100%">
+              <h4>Speech Recognition Guessing Game API</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column cars">
+            <div class="content">
+            <img src="./assets/img/Pokemon.png" alt="Car" style="width:100%">
+              <h4>Pokemon Inquirer App</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column cars">
+            <div class="content">
+            <img src="./assets/img/weather.png" alt="Car" style="width:100%">
+              <h4>Weather App</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+        
+          <div class="column people">
+            <div class="content">
+              <img src="./assets/img/GithubCards.png" alt="Car" style="width:100%">
+              <h4>Github Page Locator App</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="./assets/img/to-do.png" alt="Car" style="width:100%">
+              <h4>React To - Do List</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+              <h4>React Tic Tac Toe</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+              <h4>React Friends App</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+              <h4>Burger Builder App </h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+              <h4>Break The Cycle</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+              <h4>Redesing Spotify </h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+              <h4>Unique Beaty E-Commerce </h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+              <h4>Cameras E-Commerce </h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+        <!-- END GRID -->
+        </div>
+        
+        <!-- END MAIN -->
+        </div>
+ <script src="./assets/js/Portfolio.js"></script>
+</body>
+</html>

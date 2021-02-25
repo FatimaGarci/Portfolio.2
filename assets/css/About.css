@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kalam&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    overflow-x: hidden;
+    /* needed because hiding the menu on the right side is not perfect,  */
+}
+
+.logo-title {
+    font-family: 'Courgette', cursive;
+    letter-spacing: 4px;
+    font-size: 40px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #232323;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #718ac4;
+}
+
+#menuToggle {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 4;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+/* Just a quick hamburger */
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #000000;
+    box-shadow: 1px 2px 2px #e0a328;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/** Transform all the slices of hamburger into a crossmark. */
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+/** But let's hide the middle one. */
+
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/** Ohyeah and the last one should go the other direction*/
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/** Make this absolute positioned at the top left of the screen*/
+#menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -100px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+/** And let's fade it in from the left*/
+
+#menuToggle input:checked~ul {
+    transform: none;
+    opacity: 1;
+}
+
+/* Tittle section */
+
+#about-me {
+    width: 100%;
+    padding: 60px 15px;
+}
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+#about-me .container .title-about {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #718ac4;
+    text-shadow: 2px 1px 3px #e0a328;
+    /* border-bottom: 10px solid #838383; */
+    /* padding-bottom: 8px; */
+}
+
+/* The two different conrainers that hold the Info */
+
+.content {
+    display: flex;
+    height: 500px;
+    background-color: #718ac4;
+}
+
+.content > .content-wrap {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 17px;
+}
+
+.content .img-responsive{
+    width: 300px;
+
+}
+
+/*  Title and Paragraph*/
+
+.content-wrap h3 {
+    font-size: 30px;
+    font-family: 'Kalam', cursive;
+    padding-bottom: 10px;
+}
+
+#about-me .content .content-wrap p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #838383;
+    margin: 0 0 20px;
+}
+
+#about-me .content-wrap .info .list p {
+    margin: 0;
+}
+
+/* List & content of basic info */
+
+#about-me .content-wrap .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#about-me .content-wrap .info .list {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #838383;
+    padding-bottom: 8px;
+}
+
+#about-me .content-wrap .info .list label {
+    padding-right: 10px;
+    color: #000;
+    font-weight: 500;
+    font-size: 25px;
+}
+#about-me .content-wrap .info .list .text-list{
+    font-size: 21px;
+    padding-top: 5px;
+    color: #838383;
+    margin: 0;
+}
+
+
+/* icons-container */
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 330px;
+    padding-top: 30px;
+    color: white;
+    background: linear-gradient(to right, #516caa, #7a91c9, #a1b5e4);
+}
+
+.icons-container div {
+    width: 380px;
+    margin-left: 20px;
+}
+
+.icons-container i {
+    font-size: 45px;
+    background: #e0a328;
+    color: white;
+    border-radius: 50%;
+    padding: 40px;
+}
+
+.icons-container div p {
+    font-size: 18px;
+    /* line-height: 28px; */
+    margin-top: 20px;
+}
+
+
+/* Preview Project CSS */
+.Preview-title{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 70px;
+    text-transform: uppercase;
+    border-bottom: 5px solid #e0a328;
+    font-family: 'Inconsolata', monospace;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    color: #718ac4;
+    /* text-shadow: 1px 1px 1px #e0a328; */
+    text-align: center;
+}
+.container{
+    width: 88vw;
+    margin: 0 auto;
+}
+.lg-title,
+.md-title,
+.sm-title{
+    font-family: 'Roboto', sans-serif;
+    padding: 0.6rem 0;
+    text-transform: capitalize;
+}
+.lg-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1.3rem 0;
+    opacity: 0.9;
+}
+.md-title{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.sm-title{
+    font-weight: 300;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.text-light{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    opacity: 0.5;
+    margin: 0.4rem 0;
+}
+
+/* product collection */
+.product-collection{
+    padding: 3.2rem 0;
+}
+.product-collection-wrapper{
+    padding: 3.2rem 0;
+}
+.product-col-left{
+    background: linear-gradient(rgba(0, 0, 0, 0.068), rgba(0, 0, 0, 0.3)), url("https://www.telegraph.co.uk/content/dam/beauty/2016/11/16/SkincareScience_Niacinamide_1728_trans_NvBQzQNjv4BqEOImp4s5h5VhVdX0KdEE9JGgoArIYx7OX2MEDvL6Npw.jpg?imwidth=450") center/cover no-repeat;
+}
+.product-col-r-top{
+    background: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.3)), url("https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/images/si-GreatBarrierReef.png?itok=Srtx66fg") center/cover no-repeat;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50vh;
+    padding: 2rem 1.5rem 3.2rem;
+    margin: 5px;
+}
+.product-col-r-bottom > div:first-child{
+    background: #e0a328;
+}
+.product-col-r-bottom > div:last-child{
+    background: #718ac4;
+}
+.product-col-content{
+    text-align: center;
+    color: white;
+}
+.product-collection .text-light{
+    opacity: 1;
+    font-size: 0.8;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.btn-dark{
+    background: black;
+    color: white;
+    outline: 0;
+    border-radius: 25px;
+    padding: 0.7rem 1rem;
+    border: 0;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    font-size: 1rem;
+    font-family: inherit;
+}
+.btn-dark:hover{
+    background:  #FFA57D;
+}
+
+/* Footer */
+
+#footer {
+    height: 8rem;
+    margin-top: 2rem;
+    /* margin-bottom: 2rem; */
+    color: #272727;
+    font-family: 'Caveat';
+    text-align: center;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.social-media-links {
+    padding-top: 1rem;
+    font-size: 1.9rem;
+}
+
+/* Social Media Links */
+
+.fa {
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.9;
+    color: #000;
+}
+
+.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram {
+    color: #000000;
+}
+
+/* Media Queries */
+@media screen and (min-width: 992px){
+    .product-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-col-r-bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1200px){
+    .product-items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .products .text-light{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1336px){
+    .product-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-collection-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flex{
+        height: 55vh;
+    }
+    .product-col-left{
+        height: 111.5vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #menu {
+        transform: none;
+        opacity: 0;
+        transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+}
