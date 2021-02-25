@@ -140,7 +140,7 @@ a:hover {
   
 #portfolio-title {
     font-size: 50px;
-    word-break: break-all;
+    /* word-break: break-all; */
   }
   
   .row {
@@ -150,13 +150,14 @@ a:hover {
   /* Add padding BETWEEN each column */
   .row,
   .row > .column {
-    padding: 10px;
+    padding: 8px;
   }
   
   /* Create three equal columns that floats next to each other */
   .column {
     float: left;
     width: 50%;
+    height: 400px;
     display: none; /* Hide all elements by default */
   }
   
@@ -172,7 +173,10 @@ a:hover {
     background-color: white;
     padding: 10px;
   }
-  
+ .content img{
+    width: 300px;
+  }
+
   /* The "show" class is added to the filtered elements */
   .show {
     display: block;
