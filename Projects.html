@@ -1,167 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/Projects.css">
-    <title>Document</title>
-</head>
-<body>
-    <nav role='navigation'>
-        <h2 class="logo-title">Fatima Garcia</h2>
-        <div id="menuToggle">
-            <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
-            <input type="checkbox" />
-            <!--Some spans to act as a hamburger.-->
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-                <a href="Index.html">
-                    <li>Landing</li>
-                </a>
-                <a href="About.html">
-                    <li>About</li>
-                </a>
-                <a href="Projects.html">
-                    <li>Projects</li>
-                </a>
-                <a href="Contact.html">
-                    <li>Contact</li>
-                </a>
-                <a href="#" target="_blank">
-                    <li>Resume</li>
-                </a>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Projects -->
-    <div class="main">
-        <h2 id="portfolio-title">MY PORTFOLIO</h2>
-        <hr>
-        <br>    
-        <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-          <button class="btn" onclick="filterSelection('nature')"> React</button>
-          <button class="btn" onclick="filterSelection('cars')"> HTML & CSS</button>
-          <button class="btn" onclick="filterSelection('people')"> JavaScript</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/Projects.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav role='navigation'>
+    <h2 class="logo-title">Fatima Garcia</h2>
+    <div id="menuToggle">
+      <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
+      <input type="checkbox" />
+      <!--Some spans to act as a hamburger.-->
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a href="Index.html">
+          <li>Landing</li>
+        </a>
+        <a href="About.html">
+          <li>About</li>
+        </a>
+        <a href="Projects.html">
+          <li>Projects</li>
+        </a>
+        <a href="Contact.html">
+          <li>Contact</li>
+        </a>
+        <a href="#" target="_blank">
+          <li>Resume</li>
+        </a>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Projects -->
+  <div class="main">
+    <h1 id="portfolio-title">MY PORTFOLIO</h1>
+    <hr>
+    <br>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature')"> React</button>
+      <button class="btn" onclick="filterSelection('cars')"> HTML & CSS</button>
+      <button class="btn" onclick="filterSelection('people')"> JavaScript</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+
+      <div class="column nature">
+        <div class="content">
+          <img src="./assets/img/Gateway.png" alt="Mountains">
+          <h4>Gateway Project</h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+            <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
-        
-        <!-- Portfolio Gallery Grid -->
-        <div class="row">
-          <div class="column nature">
-            <div class="content">
-              <img src="./assets/img/Gateway.png" alt="Mountains">
-              <h4>Gateway Project</h4>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, officiis illo. Accusamus fuga provident ex, sunt maiores voluptate. Nemo, voluptate quis dicta delectus fugiat totam nam magnam a rem quibusdam quos assumenda iusto molestiae eligendi tempora maiores voluptatum optio? Ea a qui quia magni! Voluptates quis aut maxime at quibusdam.</p>
+      </div>
+
+      <div class="column nature">
+        <div class="content">
+          <img src="./assets/img/Form.png" alt="Lights">
+          <h4>Restaurant Reservation Form</h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="column nature">
-            <div class="content">
-            <img src="./assets/img/Form.png" alt="Lights">
-              <h4>Restaurant Reservation Form</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et magni tempora illum, amet ut maiores hic fugit pariatur repellendus minima praesentium, dignissimos sapiente quod facilis provident iure excepturi iste expedita dolores? Nemo minima temporibus sunt eos modi explicabo libero consectetur sequi voluptatibus ipsa, nobis expedita harum in nesciunt molestias!</p>
-            </div>
-          </div>
-          <div class="column nature">
-            <div class="content">
-            <img src="./assets/img/navbar.png" alt="Nature">
-              <h4>Animated Navigation Bar</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et magni tempora illum, amet ut maiores hic fugit pariatur repellendus minima praesentium, dignissimos sapiente quod facilis provident iure excepturi iste expedita dolores? Nemo minima temporibus sunt eos modi explicabo libero consectetur sequi voluptatibus ipsa, nobis expedita harum in nesciunt molestias!</p>
-            </div>
-          </div>
-          
-          <div class="column cars">
-            <div class="content">
-              <img src="./assets/img/speech.png" alt="Car">
-              <h4>Speech Recognition Guessing Game API</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et magni tempora illum, amet ut maiores hic fugit pariatur repellendus minima praesentium, dignissimos sapiente quod facilis provident iure excepturi iste expedita dolores? Nemo minima temporibus sunt eos modi explicabo libero consectetur sequi voluptatibus ipsa, nobis expedita harum in nesciunt molestias!</p>
-            </div>
-          </div>
-          <div class="column cars">
-            <div class="content">
-            <img src="./assets/img/Pokemon.png" alt="Car">
-              <h4>Pokemon Inquirer App</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et magni tempora illum, amet ut maiores hic fugit pariatur repellendus minima praesentium, dignissimos sapiente quod facilis provident iure excepturi iste expedita dolores? Nemo minima temporibus sunt eos modi explicabo libero consectetur sequi voluptatibus ipsa, nobis expedita harum in nesciunt molestias!</p>
-            </div>
-          </div>
-          <div class="column cars">
-            <div class="content">
-            <img src="./assets/img/weather.png" alt="Car">
-              <h4>Weather App</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et magni tempora illum, amet ut maiores hic fugit pariatur repellendus minima praesentium, dignissimos sapiente quod facilis provident iure excepturi iste expedita dolores? Nemo minima temporibus sunt eos modi explicabo libero consectetur sequi voluptatibus ipsa, nobis expedita harum in nesciunt molestias!</p>
-            </div>
-          </div>
-        
-          <div class="column people">
-            <div class="content">
-              <img src="./assets/img/GithubCards.png" alt="Car">
-              <h4>Github Page Locator App</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et magni tempora illum, amet ut maiores hic fugit pariatur repellendus minima praesentium, dignissimos sapiente quod facilis provident iure excepturi iste expedita dolores? Nemo minima temporibus sunt eos modi explicabo libero consectetur sequi voluptatibus ipsa, nobis expedita harum in nesciunt molestias!</p>
-            </div>
-          </div>
-          <div class="column people">
-            <div class="content">
-            <img src="./assets/img/to-do.png" alt="Car">
-              <h4>React To - Do List</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et magni tempora illum, amet ut maiores hic fugit pariatur repellendus minima praesentium, dignissimos sapiente quod facilis provident iure excepturi iste expedita dolores? Nemo minima temporibus sunt eos modi explicabo libero consectetur sequi voluptatibus ipsa, nobis expedita harum in nesciunt molestias!</p>
-            </div>
-          </div>
-          <div class="column people">
-            <div class="content">
-            <img src="./assets/img/tic-tactoe.png" alt="Car">
-              <h4>React Tic Tac Toe</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et magni tempora illum, amet ut maiores hic fugit pariatur repellendus minima praesentium, dignissimos sapiente quod facilis provident iure excepturi iste expedita dolores? Nemo minima temporibus sunt eos modi explicabo libero consectetur sequi voluptatibus ipsa, nobis expedita harum in nesciunt molestias!</p>
-            </div>
-          </div>
-          <div class="column people">
-            <div class="content">
-            <img src="https://via.placeholder.com/100/09f/fff.png" alt="Car">
-              <h4>React Friends App</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et magni tempora illum, amet ut maiores hic fugit pariatur repellendus minima praesentium, dignissimos sapiente quod facilis provident iure excepturi iste expedita dolores? Nemo minima temporibus sunt eos modi explicabo libero consectetur sequi voluptatibus ipsa, nobis expedita harum in nesciunt molestias!</p>
-            </div>
-          </div>
-          <div class="column people">
-            <div class="content">
-            <img src="https://via.placeholder.com/100/09f/fff.png" alt="Car">
-              <h4>Burger Builder App </h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et magni tempora illum, amet ut maiores hic fugit pariatur repellendus minima praesentium, dignissimos sapiente quod facilis provident iure excepturi iste expedita dolores? Nemo minima temporibus sunt eos modi explicabo libero consectetur sequi voluptatibus ipsa, nobis expedita harum in nesciunt molestias!</p>
-            </div>
-          </div>
-          <div class="column people">
-            <div class="content">
-            <img src="https://via.placeholder.com/100/09f/fff.png" alt="Car">
-              <h4>Break The Cycle</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et magni tempora illum, amet ut maiores hic fugit pariatur repellendus minima praesentium, dignissimos sapiente quod facilis provident iure excepturi iste expedita dolores? Nemo minima temporibus sunt eos modi explicabo libero consectetur sequi voluptatibus ipsa, nobis expedita harum in nesciunt molestias!</p>
-            </div>
-          </div>
-          <div class="column people">
-            <div class="content">
-            <img src="https://via.placeholder.com/100/09f/fff.png" alt="Car">
-              <h4>Redesing Spotify </h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et magni tempora illum, amet ut maiores hic fugit pariatur repellendus minima praesentium, dignissimos sapiente quod facilis provident iure excepturi iste expedita dolores? Nemo minima temporibus sunt eos modi explicabo libero consectetur sequi voluptatibus ipsa, nobis expedita harum in nesciunt molestias!</p>
-            </div>
-          </div>
-          <div class="column people">
-            <div class="content">
-            <img src="https://via.placeholder.com/100/09f/fff.png" alt="Car">
-              <h4>Unique Beaty E-Commerce </h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et magni tempora illum, amet ut maiores hic fugit pariatur repellendus minima praesentium, dignissimos sapiente quod facilis provident iure excepturi iste expedita dolores? Nemo minima temporibus sunt eos modi explicabo libero consectetur sequi voluptatibus ipsa, nobis expedita harum in nesciunt molestias!</p>
-            </div>
-          </div>
-          <div class="column people">
-            <div class="content">
-            <img src="https://via.placeholder.com/100/09f/fff.png" alt="Car">
-              <h4>Cameras E-Commerce </h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas et magni tempora illum, amet ut maiores hic fugit pariatur repellendus minima praesentium, dignissimos sapiente quod facilis provident iure excepturi iste expedita dolores? Nemo minima temporibus sunt eos modi explicabo libero consectetur sequi voluptatibus ipsa, nobis expedita harum in nesciunt molestias!</p>
-            </div>
-          </div>
-        <!-- END GRID -->
         </div>
-        
-        <!-- END MAIN -->
+      </div>
+
+      <div class="column nature">
+        <div class="content">
+          <img src="./assets/img/navbar.png" alt="Nature">
+          <h4>Animated Navigation Bar</h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
- <script src="./assets/js/Portfolio.js"></script>
+      </div>
+
+      <div class="column cars">
+        <div class="content">
+          <img src="./assets/img/speech.png" alt="Car">
+          <h4>Speech Recognition Game</h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="column cars">
+        <div class="content">
+          <img src="./assets/img/Pokemon.png" alt="Car">
+          <h4>Pokemon Inquirer App</h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column cars">
+        <div class="content">
+          <img src="./assets/img/weather.png" alt="Car">
+          <h4>Weather App</h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column people">
+        <div class="content">
+          <img src="./assets/img/GithubCards.png" alt="Car">
+          <h4>Github Page Locator App</h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column people">
+        <div class="content">
+          <img src="./assets/img/to-do.png" alt="Car">
+          <h4>React To - Do List</h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column people">
+        <div class="content">
+          <img src="./assets/img/tic-tactoe.png" alt="Car">
+          <h4>React Tic Tac Toe</h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column people">
+        <div class="content">
+          <img src="./assets/img/friends-app.png" alt="Car">
+          <h4>React Friends App</h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column people">
+        <div class="content">
+          <img src="./assets/img/burger.png" alt="Car">
+          <h4>Burger Builder App </h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column people">
+        <div class="content">
+          <img src="./assets/img/break-cycle.png" alt="Car">
+          <h4>Break The Cycle</h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column people">
+        <div class="content">
+          <img src="./assets/img/spotify.png" alt="Car">
+          <h4>Redesing Spotify </h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column people">
+        <div class="content">
+          <img src="./assets/img/beuty-ecommer.png" alt="Car">
+          <h4>Unique Beaty E-Commerce </h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column people">
+        <div class="content">
+          <img src="./assets/img/camera-wcommerce.png" alt="Car">
+          <h4>Cameras E-Commerce </h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column people">
+        <div class="content">
+          <img src="./assets/img/airquality.png" alt="Car">
+          <h4>POLLUTION PATROL</h4>
+          <!-- Button -->
+          <div class="container">
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          <!-- Button -->
+            <div class="center">
+              <button class="button">
+                <span class="hover-icon">HOVER ME</span>
+                <svg viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END GRID -->
+    </div>
+
+    <!-- END MAIN -->
+  </div>
+  <script src="./assets/js/Portfolio.js"></script>
 </body>
+
 </html>
