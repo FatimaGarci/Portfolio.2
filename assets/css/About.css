@@ -363,6 +363,11 @@ a:hover {
     background:  #FFA57D;
 }
 
+/* Testimonios */
+.testimonio-title{
+    font-size: 70px;
+    text-align: center;
+}
 /* Footer */
 
 #footer {
