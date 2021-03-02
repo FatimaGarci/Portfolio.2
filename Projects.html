@@ -12,7 +12,7 @@
 
 <body>
   <nav role='navigation'>
-    <h2 class="logo-title">FG</h2>
+    <!-- <h2 class="logo-title">FG</h2> -->
     <div id="menuToggle">
       <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
       <input type="checkbox" />
@@ -44,70 +44,88 @@
   <div class="main">
     <h1 id="portfolio-title">MY PORTFOLIO</h1>
     <hr>
-    <br>
+    <br>    
     <div id="myBtnContainer">
       <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-      <button class="btn" onclick="filterSelection('nature')"> React</button>
-      <button class="btn" onclick="filterSelection('cars')"> HTML & CSS</button>
-      <button class="btn" onclick="filterSelection('people')"> JavaScript</button>
+      <button class="btn" onclick="filterSelection('H&C')">HTML & CSS</button>
+      <button class="btn" onclick="filterSelection('js')">JavaScript</button>
+      <button class="btn" onclick="filterSelection('react')">React</button>
     </div>
 
     <!-- Portfolio Gallery Grid -->
     <div class="row">
 
-      <div class="column nature">
+      <div class="column H&C">
         <div class="content">
           <img src="./assets/img/Gateway.png" alt="Mountains">
           <h4>Gateway Project</h4>
-          <!-- Button -->
-          <!-- <button>Click Me</button> -->
-          <!-- Button -->
+          <div class="text-right">
+            <!-- Button -->
+            <button type="button" class="btn-dark"> <a href="https://gateway-cohort-8.netlify.app/">View
+                Project</a></button>
+            <!-- <button>Click Me</button> -->
+            <!-- Button -->
+            <button type="button" class="btn-dark"><a href="https://github.com/FatimaGarci/Cohort-8">View
+                GitHub</a></button>
+          </div>
         </div>
       </div>
 
-      <div class="column nature">
+      <!-- <a href=""></a> -->
+
+      <div class="column H&C">
         <div class="content">
           <img src="./assets/img/Form.png" alt="Lights">
           <h4>Reservation Form</h4>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://reservation-form.netlify.app">View Project</a></button>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://github.com/FatimaGarci/Reservation-Form">View Github</a></button>
         </div>
       </div>
 
-      <div class="column nature">
+      <div class="column js">
         <div class="content">
           <img src="./assets/img/navbar.png" alt="Nature">
           <h4>Animated Navigation Bar</h4>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://fatima-navbar.netlify.app">View Project</a></button>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://github.com/FatimaGarci/navbar">View Github</a></button>
         </div>
       </div>
 
-      <div class="column cars">
+      <div class="column js">
         <div class="content">
           <img src="./assets/img/speech.png" alt="Car">
           <h4>Speech Recognition Game</h4>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://fatima-speech-recognition.netlify.app">View Project</a></button>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://github.com/FatimaGarci/Speech-Recognition">View Github</a></button>
         </div>
       </div>
 
 
-      <div class="column cars">
+      <div class="column js">
         <div class="content">
           <img src="./assets/img/Pokemon.png" alt="Car">
           <h4>Pokemon Inquirer App</h4>
           <!-- Button -->
+          <!-- <button type="button" class="btn-dark"><a href="">View Project</a></button> -->
           <!-- Button -->
+          <button type="button" class="btn-center"><a href="https://github.com/FatimaGarci/Pokemon-Inquirer-">View Github</a></button>
         </div>
       </div>
 
-      <div class="column cars">
+      <div class="column js">
         <div class="content">
           <img src="./assets/img/weather.png" alt="Car">
           <h4>Weather App</h4>
           <!-- Button -->
+          <!-- <button type="button" class="btn-dark"><a href="">View Project</a></button> -->
           <!-- Button -->
+          <button type="button" class="btn-center"><a href="https://github.com/FatimaGarci/Weather-app">View Github</a></button>
         </div>
       </div>
 
@@ -116,88 +134,108 @@
           <img src="./assets/img/GithubCards.png" alt="Car">
           <h4>Github Page Locator App</h4>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://fatima-github-locator.netlify.app">View Project</a></button>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://github.com/FatimaGarci/Github-Locator">View Github</a></button>
         </div>
       </div>
 
-      <div class="column people">
+      <div class="column react">
         <div class="content">
           <img src="./assets/img/to-do.png" alt="Car">
           <h4>React To - Do List</h4>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://fatima-to-do-list.netlify.app">View Project</a></button>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://github.com/FatimaGarci/To-Do-List">View Github</a></button>
         </div>
       </div>
 
-      <div class="column people">
+      <div class="column react">
         <div class="content">
           <img src="./assets/img/tic-tactoe.png" alt="Car">
           <h4>React Tic Tac Toe</h4>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://tic-tac-toe-fatima.netlify.app">View Project</a></button>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://github.com/FatimaGarci/Tic-tac-toe">View Github</a></button>
         </div>
       </div>
 
-      <div class="column people">
+      <div class="column react">
         <div class="content">
           <img src="./assets/img/friends-app.png" alt="Car">
           <h4>React Friends App</h4>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://reaact-frinds-app.netlify.app">View Project</a></button>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://github.com/FatimaGarci/react-friends">View Github</a></button>
         </div>
       </div>
 
-      <div class="column people">
+      <div class="column react js">
         <div class="content">
           <img src="./assets/img/burger.png" alt="Car">
           <h4>Burger Builder App </h4>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://buger-app.netlify.app">View Project</a></button>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://github.com/FatimaGarci/burger-app">View Github</a></button>
         </div>
       </div>
 
-      <div class="column people">
+      <!-- <div class="column people">
         <div class="content">
           <img src="./assets/img/break-cycle.png" alt="Car">
           <h4>Break The Cycle</h4>
-          <!-- Button -->
-          <!-- Button -->
+          
+          <button type="button" class="btn-dark"><a href="">View Project</a></button>
+         
+          <button type="button" class="btn-dark"><a href="">View Project</a></button>
         </div>
-      </div>
+      </div> -->
 
-      <div class="column people">
+      <div class="column react">
         <div class="content">
           <img src="./assets/img/spotify.png" alt="Car">
           <h4>Redesing Spotify </h4>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href= "https://redesing-spotify.netlify.app">View Project</a></button>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://github.com/FatimaGarci/-Redesign-Website">View Github</a></button>
         </div>
       </div>
 
-      <div class="column people">
+      <div class="column react">
         <div class="content">
           <img src="./assets/img/beuty-ecommer.png" alt="Car">
           <h4>Unique Beaty E-Commerce </h4>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://unique-beauty.netlify.app">View Project</a></button>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://github.com/FatimaGarci/Ecom-2">View Github</a></button>
         </div>
       </div>
 
-      <div class="column people">
+      <div class="column react">
         <div class="content">
           <img src="./assets/img/camera-wcommerce.png" alt="Car">
           <h4>Cameras E-Commerce </h4>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://fatima-react-ecommerce.netlify.app">View Project</a></button>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://github.com/FatimaGarci/React-ecommerce">View Github</a></button>
         </div>
       </div>
 
-      <div class="column people">
+      <div class="column js H&C">
         <div class="content">
           <img src="./assets/img/airquality.png" alt="Car">
           <h4>POLLUTION PATROL</h4>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://hope-hackaton.netlify.app">View Project</a></button>
           <!-- Button -->
+          <button type="button" class="btn-dark"><a href="https://github.com/FatimaGarci/Hope-Hackaton">View Github</a></button>
         </div>
       </div>
       <!-- END GRID -->
@@ -209,14 +247,13 @@
   <!-- Footer  -->
   <footer id="footer">
     <div class="social-media-links">
-      <a href="https://www.facebook.com/" class="fa fa-facebook" aria-label="Facebook"></a>
-      <a href="https://twitter.com/" class="fa fa-twitter" aria-label="Twitter"></a>
-      <a href="https://www.instagram.com/" class="fa fa-instagram" aria-label="Instagram"></a>
-      <a href="https://www.youtube.com/" class="fa fa-youtube" aria-label="Youtube"></a>
+      <a href="https://github.com/FatimaGarci" class="fa fa-github"></a>
+      <a href="https://twitter.com/" class="fa fa-twitter"></a>
+      <a href="https://www.linkedin.com/in/fatima-lg/" class="fab fa-linkedin"></a>
     </div>
     <div class='footer-text'>
       <div class="copyright">
-        <p>&copy; 2020 Rossmery Garcia | OFFICIAL STORE. ALL RIGHTS RESERVED.</p>
+        <p>&copy; 2020 Fatima Garcia | ALL RIGHTS RESERVED.</p>
       </div>
       <div class="footer-links">
         <a href="About.html">| About Me |</a>

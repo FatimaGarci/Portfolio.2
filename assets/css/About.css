@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kalam&family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -106,6 +105,7 @@ a:hover {
 }
 
 /** Make this absolute positioned at the top left of the screen*/
+
 #menu {
     position: absolute;
     width: 300px;
@@ -164,15 +164,14 @@ a:hover {
     background-color: #718ac4;
 }
 
-.content > .content-wrap {
+.content>.content-wrap {
     background-color: #f1f1f1;
     margin: 10px;
     padding: 17px;
 }
 
-.content .img-responsive{
+.content .img-responsive {
     width: 300px;
-
 }
 
 /*  Title and Paragraph*/
@@ -220,15 +219,16 @@ a:hover {
     font-weight: 500;
     font-size: 25px;
 }
-#about-me .content-wrap .info .list .text-list{
+
+#about-me .content-wrap .info .list .text-list {
     font-size: 21px;
     padding-top: 5px;
     color: #838383;
     margin: 0;
 }
 
-
 /* icons-container */
+
 .icons-container {
     display: flex;
     flex-direction: row;
@@ -258,9 +258,9 @@ a:hover {
     margin-top: 20px;
 }
 
-
 /* Preview Project CSS */
-.Preview-title{
+
+.Preview-title {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -274,34 +274,38 @@ a:hover {
     /* text-shadow: 1px 1px 1px #e0a328; */
     text-align: center;
 }
-.container{
+
+.container {
     width: 88vw;
     margin: 0 auto;
 }
-.lg-title,
-.md-title,
-.sm-title{
+
+.lg-title, .md-title, .sm-title {
     font-family: 'Roboto', sans-serif;
     padding: 0.6rem 0;
     text-transform: capitalize;
 }
-.lg-title{
+
+.lg-title {
     font-size: 2.5rem;
     font-weight: 500;
     text-align: center;
     padding: 1.3rem 0;
     opacity: 0.9;
 }
-.md-title{
+
+.md-title {
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
 }
-.sm-title{
+
+.sm-title {
     font-weight: 300;
     font-size: 1rem;
     text-transform: uppercase;
 }
-.text-light{
+
+.text-light {
     font-size: 1rem;
     font-weight: 600;
     line-height: 1.5;
@@ -310,19 +314,24 @@ a:hover {
 }
 
 /* product collection */
-.product-collection{
+
+.product-collection {
     padding: 3.2rem 0;
 }
-.product-collection-wrapper{
+
+.product-collection-wrapper {
     padding: 3.2rem 0;
 }
-.product-col-left{
+
+.product-col-left {
     background: linear-gradient(rgba(0, 0, 0, 0.068), rgba(0, 0, 0, 0.3)), url("https://www.telegraph.co.uk/content/dam/beauty/2016/11/16/SkincareScience_Niacinamide_1728_trans_NvBQzQNjv4BqEOImp4s5h5VhVdX0KdEE9JGgoArIYx7OX2MEDvL6Npw.jpg?imwidth=450") center/cover no-repeat;
 }
-.product-col-r-top{
+
+.product-col-r-top {
     background: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.3)), url("https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/images/si-GreatBarrierReef.png?itok=Srtx66fg") center/cover no-repeat;
 }
-.flex{
+
+.flex {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -330,23 +339,28 @@ a:hover {
     padding: 2rem 1.5rem 3.2rem;
     margin: 5px;
 }
-.product-col-r-bottom > div:first-child{
+
+.product-col-r-bottom>div:first-child {
     background: #e0a328;
 }
-.product-col-r-bottom > div:last-child{
+
+.product-col-r-bottom>div:last-child {
     background: #718ac4;
 }
-.product-col-content{
+
+.product-col-content {
     text-align: center;
     color: white;
 }
-.product-collection .text-light{
+
+.product-collection .text-light {
     opacity: 1;
     font-size: 0.8;
     font-weight: 400;
     line-height: 1.7;
 }
-.btn-dark{
+
+.btn-dark {
     background: black;
     color: white;
     outline: 0;
@@ -359,15 +373,12 @@ a:hover {
     font-size: 1rem;
     font-family: inherit;
 }
-.btn-dark:hover{
-    background:  #FFA57D;
+
+.btn-dark:hover {
+    background: #FFA57D;
 }
 
-/* Testimonios */
-.testimonio-title{
-    font-size: 70px;
-    text-align: center;
-}
+
 /* Footer */
 
 #footer {
@@ -403,41 +414,43 @@ a:hover {
 }
 
 /* Media Queries */
-@media screen and (min-width: 992px){
-    .product-items{
+
+@media screen and (min-width: 992px) {
+    .product-items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .product-col-r-bottom{
+    .product-col-r-bottom {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (min-width: 1200px){
-    .product-items{
+
+@media screen and (min-width: 1200px) {
+    .product-items {
         grid-template-columns: repeat(3, 1fr);
     }
-    .product{
+    .product {
         margin-right: 1rem;
         margin-left: 1rem;
     }
-    .products .text-light{
+    .products .text-light {
         width: 50%;
     }
 }
 
-@media screen and (min-width: 1336px){
-    .product-items{
+@media screen and (min-width: 1336px) {
+    .product-items {
         grid-template-columns: repeat(2, 1fr);
     }
-    .product-collection-wrapper{
+    .product-collection-wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .flex{
+    .flex {
         height: 55vh;
     }
-    .product-col-left{
+    .product-col-left {
         height: 111.5vh;
     }
 }
@@ -447,5 +460,127 @@ a:hover {
         transform: none;
         opacity: 0;
         transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+}
+
+/* ----------- iPhone X ----------- */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .logo-title {
+        letter-spacing: 4px;
+        font-size: 30px;
+        margin: 22px;
+    }
+    #about-me {
+        width: 100%;
+        padding: 70px 15px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        height: 740px;
+    }
+    .content .img-responsive {
+        width: 280px;
+    }
+    .content-wrap h3 {
+        font-size: 20px;
+    }
+    #about-me .content .content-wrap p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    #about-me .content-wrap .info .list label {
+        padding-right: 10px;
+        font-weight: 300;
+        font-size: 17px;
+    }
+    #about-me .content-wrap .info .list .text-list {
+        font-size: 12px;
+        padding-top: 5px;
+    }
+    /* icons-container */
+    .icons-container {
+        display: flex;
+        /* flex-direction: column; */
+        height: 320px;
+        padding-top: 10px;
+    }
+    .icons-container div {
+        width: 180px;
+        /* text-align: center; */
+        margin-left: 10px;
+    }
+    .icons-container i {
+        font-size: 25px;
+        padding: 25px;
+    }
+    .icons-container div p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    /* Preview Project CSS */
+    .Preview-title {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 40px;
+        text-transform: uppercase;
+        border-bottom: 5px solid #e0a328;
+        font-family: 'Inconsolata', monospace;
+        margin-top: 20px;
+        letter-spacing: 2px;
+        color: #718ac4;
+        /* text-shadow: 1px 1px 1px #e0a328; */
+        text-align: center;
+    }
+
+    /* Footer */
+    #footer {
+        height: 5rem;
+        margin-top: 0rem;
+        /* margin-bottom: 2rem; */
+        letter-spacing: .2rem;
+    }
+    .social-media-links {
+        padding-top: 0rem;
+        font-size: 1.9rem;
+    }
+}
+
+/* Ipad */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .content .img-responsive {
+        width: 200px;
+    }
+    .content {
+        display: flex;
+        /* flex-direction: column; */
+        height: 440px;
+    }
+    .content-wrap h3 {
+        font-size: 22px;
+    }
+    #about-me .content .content-wrap p {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    #about-me .content-wrap .info .list label {
+        padding-right: 10px;
+        font-weight: 300;
+        font-size: 17px;
+    }
+    #about-me .content-wrap .info .list .text-list {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+    .icons-container {
+        display: flex;
+        /* flex-direction: column; */
+        height: 350px;
+        padding-top: 10px;
     }
 }

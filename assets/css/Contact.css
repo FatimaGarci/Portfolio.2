@@ -317,3 +317,56 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 .fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram {
   color: #000000;
 }
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .logo-title {
+      letter-spacing: 4px;
+      font-size: 30px;
+      margin: 22px;
+  }
+  h2 {
+      margin: 80px 0 15px 0;
+      font-size: 2rem;
+    }
+    #form {
+      width: 80px;
+      margin-left: 40px;
+    }
+    input{
+      width: 300px;
+    }
+    textarea{
+      width: 300px;
+    }
+    #submit{
+      width: 300px;
+    }
+      /* Footer */
+
+#footer {
+  /* height: 12rem; */
+  margin-top: 2rem;
+  /* margin-bottom: 2rem; */
+  color: #272727;
+  font-family: 'Caveat';
+  text-align: center;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+#footer .footer-text{
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.social-media-links {
+  padding-top: 1rem;
+  font-size: 1.9rem;
+}
+
+}

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kalam&family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -155,35 +155,22 @@ body {
 
 h1 {
   font-size: 50px;
+  margin-top: 20px;
   word-break: break-all;
 }
 
-.row {
-  margin: 10px -16px;
+.row{
+  margin-top: 20px;
+  overflow: hidden;
 }
-
-/* Add padding BETWEEN each column */
-
-.row, .row>.column {
-  padding: 15px;
-}
-
 /* Create three equal columns that floats next to each other */
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 440px;
   padding: 15px;
   display: none;
   /* Hide all elements by default */
-}
-
-/* Clear floats after rows */
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Content */
@@ -196,14 +183,15 @@ h1 {
 .content h4 {
   margin-top: 8px;
   text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 1.50em;
+  font-weight: 530;
+  /* font-family: 'IBM Plex Mono', monospace; */
+  font-size: 1.70em;
   letter-spacing: 2px;
 }
 
 .content img {
-  width: 390px;
-  height: 265px;
+  width: 350px;
+  height: 235px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -223,6 +211,7 @@ h1 {
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .btn:hover {
@@ -235,12 +224,14 @@ h1 {
 }
 
 /* Project button */
+
 .container {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
   margin-bottom: 15px;
 }
+
 .center {
   /* display: flex; */
   width: 150px;
@@ -248,46 +239,55 @@ h1 {
   /* position: absolute; */
 }
 
-.button {
-  width: 150px;
-  height: 50px;
+/* .content button{
+  display: flex;
+} */
+
+.btn-dark {
+  background: black;
+  border-radius: 25px;
+  padding: 0.7rem 1rem;
+  border: 0;
+  margin-top: 1rem;
   cursor: pointer;
-  background: transparent;
-  border: 1px solid #91C9FF;
-  outline: none;
-  transition: 1s ease-in-out;
+  transition: all 0.6s ease;
+  margin-left: 40px;
 }
 
-.button>svg {
-  width: 150px;
-  height: 50px;
-  left: 0;
-  top: 0;
-  fill: none;
-  stroke: #e0a328;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: 1s ease-in-out;
+.btn-center {
+  background: black;
+  border-radius: 25px;
+  padding: 0.7rem 1rem;
+  border: 0;
+  margin-top: 1rem;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.button:hover {
-  transition: 1s ease-in-out;
-  background: #4F95DA;
+.btn-dark a {
+  font-size: .80rem;
+  font-weight: 350;
+  color: white;
 }
 
-.button:hover svg {
-  stroke-dashoffset: -480;
+.btn-center a {
+  font-size: .80rem;
+  font-weight: 350;
+  color: white;
 }
 
-.button .hover-icon {
-  color: rgb(53, 50, 50);
-  font-size: 15px;
-  font-weight: 100;
-  padding-top: 20px;
+.btn-dark:hover {
+  background: #718ac4;
 }
 
+.btn-center:hover {
+  background: #718ac4;
+}
 
-/* Footer */
+ 
+/* Social Media Links */
 
 #footer {
   height: 8rem;
@@ -305,8 +305,6 @@ h1 {
   font-size: 1.9rem;
 }
 
-/* Social Media Links */
-
 .fa {
   text-align: center;
   text-decoration: none;
@@ -319,4 +317,84 @@ h1 {
 
 .fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram {
   color: #000000;
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  h1 {
+    font-size: 30px;
+    margin-top: 25px;
+    word-break: break-all;
+  }
+
+  .content h4 {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  .content img {
+    width: 250px;
+    height: 155px;
+  }
+  .column{
+  width: 300px;
+  }
+  
+  /* Footer */
+
+#footer {
+  height: 15rem;
+  margin-top: 2rem;
+  /* margin-bottom: 2rem; */
+  color: #272727;
+  font-family: 'Caveat';
+  text-align: center;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+#footer .footer-text{
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.social-media-links {
+  padding-top: 1rem;
+  font-size: 1.9rem;
+}
+
+}
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .content h4 {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .content img {
+    width: 250px;
+    height: 165px;
+  }
+  .column{
+  width: 340px;
+  }
+  .btn-dark {
+    background: black;
+    border-radius: 25px;
+    padding: 0.7rem 1rem;
+    border: 0;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    margin-left: 5px;
+  }
 }
